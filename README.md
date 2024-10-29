@@ -5,9 +5,9 @@
 ### Asciinema Recordings
 <details>
   <summary>Even Win</summary>
-  [![asciicast](https://asciinema.org/a/ylky9EZ8o86E812RR3G1bjgXu.svg)](https://asciinema.org/a/ylky9EZ8o86E812RR3G1bjgXu)
+  [Even Win](https://asciinema.org/a/ylky9EZ8o86E812RR3G1bjgXu)
 </details>
 <details>
   <summary>Even Loss</summary>
-  [![asciicast](https://asciinema.org/a/3u4cu6qKM7NrWQSarXdV05UJR.svg)](https://asciinema.org/a/3u4cu6qKM7NrWQSarXdV05UJR)
+  [Even Loss](https://asciinema.org/a/3u4cu6qKM7NrWQSarXdV05UJR)
 </details>
