@@ -23,6 +23,8 @@ public class App {
                 Even.gameEven();
             case 0:
                 break;
+            default:
+                System.out.println("Please select 1, 2, 3, 4, 5, 6 or 0.");
         }
 
         scanner.close();
