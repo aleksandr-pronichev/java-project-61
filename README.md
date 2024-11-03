@@ -5,3 +5,5 @@
 ### Asciinema Recordings
   - [Even Win](https://asciinema.org/a/ylky9EZ8o86E812RR3G1bjgXu)
   - [Even Loss](https://asciinema.org/a/3u4cu6qKM7NrWQSarXdV05UJR)
+  - [Calc Win](https://asciinema.org/a/GZl6csgFlMaMmGbcXLTZfcMYF)
+  - [Calc Loss](https://asciinema.org/a/ZZq9WttI9ZzYTkAY3tlxoEJbR)
