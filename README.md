@@ -7,3 +7,5 @@
   - [Even Loss](https://asciinema.org/a/3u4cu6qKM7NrWQSarXdV05UJR)
   - [Calc Win](https://asciinema.org/a/GZl6csgFlMaMmGbcXLTZfcMYF)
   - [Calc Loss](https://asciinema.org/a/ZZq9WttI9ZzYTkAY3tlxoEJbR)
+  - [GCD Win](https://asciinema.org/a/HJPhPXU3czhL9m24msanzBEeO)
+  - [GCD Loss](https://asciinema.org/a/tKuMOKeKoiQyiYeVI74ftAeXt)
