@@ -3,9 +3,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/71de738da0be378eb55e/maintainability)](https://codeclimate.com/github/aleksandr-pronichev/java-project-61/maintainability)
 ---
 ### Asciinema Recordings
-  - [Even Win](https://asciinema.org/a/ylky9EZ8o86E812RR3G1bjgXu)
-  - [Even Loss](https://asciinema.org/a/3u4cu6qKM7NrWQSarXdV05UJR)
-  - [Calc Win](https://asciinema.org/a/GZl6csgFlMaMmGbcXLTZfcMYF)
-  - [Calc Loss](https://asciinema.org/a/ZZq9WttI9ZzYTkAY3tlxoEJbR)
-  - [GCD Win](https://asciinema.org/a/HJPhPXU3czhL9m24msanzBEeO)
-  - [GCD Loss](https://asciinema.org/a/tKuMOKeKoiQyiYeVI74ftAeXt)
+  - [Even Win](https://asciinema.org/a/S35NOjUbxUupMEs9dnKLN1ll3)
+  - [Even Loss](https://asciinema.org/a/Z1wYtB1nAMnbYqJ0BR3477TkL)
+  - [Calc Win](https://asciinema.org/a/v6A2KueSSaV2pbnKgIoHPGcp9)
+  - [Calc Loss](https://asciinema.org/a/ncdA8nlGFjwIGkGYgvQPHPU7m)
+  - [GCD Win](https://asciinema.org/a/g3cgPBqDIjXDKvUoVDVbomhiL)
+  - [GCD Loss](https://asciinema.org/a/2M96cCjSheGqw26O6pX0O3bbu)
