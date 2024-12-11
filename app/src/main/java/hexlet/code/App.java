@@ -5,6 +5,7 @@ import java.util.Scanner;
 import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 
 public class App {
     public static void main(String[] args) {
@@ -37,7 +38,7 @@ public class App {
                 GCD.gameGCD();
                 break;
             case 5:
-
+                Progression.gameProgression();
                 break;
             case 0:
                 break;
