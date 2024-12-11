@@ -16,6 +16,7 @@ public class App {
                 2 - Even
                 3 - Calc
                 4 - GCD
+                5 - Progression
                 0 - Exit""");
 
         System.out.print("Your choice: ");
@@ -34,6 +35,9 @@ public class App {
                 break;
             case 4:
                 GCD.gameGCD();
+                break;
+            case 5:
+
                 break;
             case 0:
                 break;
