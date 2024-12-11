@@ -9,3 +9,5 @@
   - [Calc Loss](https://asciinema.org/a/ncdA8nlGFjwIGkGYgvQPHPU7m)
   - [GCD Win](https://asciinema.org/a/g3cgPBqDIjXDKvUoVDVbomhiL)
   - [GCD Loss](https://asciinema.org/a/2M96cCjSheGqw26O6pX0O3bbu)
+  - [Progression Win](https://asciinema.org/a/XBYs1SeCPS24qUuKZ4sQkRNcr)
+  - [Progression Loss](https://asciinema.org/a/XpR61UnNF0szyclC7aADfjtYW)
