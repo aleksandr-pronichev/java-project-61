@@ -5,13 +5,14 @@ import hexlet.code.Engine;
 public class Prime {
 
     private static final String RULES = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+    private static final int MAX_NUMBER = 100;
 
     public static void gamePrime() {
         String[] questions = new String[Engine.ROUNDS];
         String[] correctAnswers = new String[Engine.ROUNDS];
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
-            int number = (int) (Math.random() * 100);
+            int number = (int) (Math.random() * MAX_NUMBER);
             questions[i] = Integer.toString(number);
             if (isPrime(number)) {
                 correctAnswers[i] = "yes";

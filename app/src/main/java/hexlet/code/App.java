@@ -19,29 +19,29 @@ public class App {
                 0 - Exit""");
 
         System.out.print("Your choice: ");
-        int choice = scanner.nextInt();
+        String choice = scanner.nextLine();
         System.out.println();
 
         switch (choice) {
-            case 1:
+            case "1":
                 Cli.greeting();
                 break;
-            case 2:
+            case "2":
                 Even.gameEven();
                 break;
-            case 3:
+            case "3":
                 Calc.gameCalc();
                 break;
-            case 4:
+            case "4":
                 GCD.gameGCD();
                 break;
-            case 5:
+            case "5":
                 Progression.gameProgression();
                 break;
-            case 6:
+            case "6":
                 Prime.gamePrime();
                 break;
-            case 0:
+            case "0":
                 break;
             default:
                 System.out.println("Please select 1, 2, 3, 4, 5, 6 or 0.");
