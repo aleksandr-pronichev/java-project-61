@@ -11,8 +11,12 @@ public class Progression {
     private static final int MAX_STEP = 10;
 
     public static void gameProgression() {
-        String[] questions = new String[Engine.ROUNDS];
-        String[] correctAnswers = new String[Engine.ROUNDS];
+        String[][] questionsAndAnswers = generateData();
+        Engine.game(RULES, questionsAndAnswers);
+    }
+
+    public static String[][] generateData() {
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int progressionLength = (int) (Math.random() * (MAX_LENGTH - MIN_LENGTH + 1)) + MIN_LENGTH;
@@ -20,7 +24,6 @@ public class Progression {
             int step = (int) (Math.random() * MAX_STEP) + 1;
 
             int[] progression = new int[progressionLength];
-
             for (int j = 0; j < progressionLength; j++) {
                 progression[j] = start + j * step;
             }
@@ -38,10 +41,9 @@ public class Progression {
                 }
             }
 
-            questions[i] = question.trim();
-            correctAnswers[i] = Integer.toString(missingNumber);
+            questionsAndAnswers[i][0] = question.trim();
+            questionsAndAnswers[i][1] = Integer.toString(missingNumber);
         }
-
-        Engine.game(RULES, questions, correctAnswers);
+        return questionsAndAnswers;
     }
 }

@@ -8,20 +8,23 @@ public class Prime {
     private static final int MAX_NUMBER = 100;
 
     public static void gamePrime() {
-        String[] questions = new String[Engine.ROUNDS];
-        String[] correctAnswers = new String[Engine.ROUNDS];
+        String[][] questionsAndAnswers = generateData();
+        Engine.game(RULES, questionsAndAnswers);
+    }
+
+    public static String[][] generateData() {
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int number = (int) (Math.random() * MAX_NUMBER);
-            questions[i] = Integer.toString(number);
+            questionsAndAnswers[i][0] = Integer.toString(number);
             if (isPrime(number)) {
-                correctAnswers[i] = "yes";
+                questionsAndAnswers[i][1] = "yes";
             } else {
-                correctAnswers[i] = "no";
+                questionsAndAnswers[i][1] = "no";
             }
         }
-
-        Engine.game(RULES, questions, correctAnswers);
+        return questionsAndAnswers;
     }
 
     private static boolean isPrime(int number) {

@@ -8,18 +8,20 @@ public class Even {
     private static final int MAX_NUMBER = 100;
 
     public static void gameEven() {
-        String[] questions = new String[Engine.ROUNDS];
-        String[] correctAnswers = new String[Engine.ROUNDS];
+        String[][] questionsAndAnswers = generateData();
+        Engine.game(RULES, questionsAndAnswers);
+    }
 
+    public static String[][] generateData() {
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int number = (int) (Math.random() * MAX_NUMBER);
-            questions[i] = Integer.toString(number);
-            if (number % 2 == 0) {
-                correctAnswers[i] = "yes";
-            } else {
-                correctAnswers[i] = "no";
-            }
+            String question = Integer.toString(number);
+            String correctAnswer = (number % 2 == 0) ? "yes" : "no";
+            questionsAndAnswers[i][0] = question;
+            questionsAndAnswers[i][1] = correctAnswer;
         }
-        Engine.game(RULES, questions, correctAnswers);
+        return questionsAndAnswers;
     }
 }
+

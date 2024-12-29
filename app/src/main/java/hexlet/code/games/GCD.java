@@ -8,17 +8,24 @@ public class GCD {
     private static final int MAX_NUMBER = 100;
 
     public static void gameGCD() {
-        String[] questions = new String[Engine.ROUNDS];
-        String[] correctAnswers = new String[Engine.ROUNDS];
+        String[][] questionsAndAnswers = generateData();
+        Engine.game(RULES, questionsAndAnswers);
+    }
+
+    public static String[][] generateData() {
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS][2];
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int firstNumber = (int) (Math.random() * MAX_NUMBER);
             int secondNumber = (int) (Math.random() * MAX_NUMBER);
-            questions[i] = firstNumber + " " + secondNumber;
+            String question = firstNumber + " " + secondNumber;
+
             int gcd = calculateGCD(firstNumber, secondNumber);
-            correctAnswers[i] = Integer.toString(gcd);
+
+            questionsAndAnswers[i][0] = question;
+            questionsAndAnswers[i][1] = Integer.toString(gcd);
         }
-        Engine.game(RULES, questions, correctAnswers);
+        return questionsAndAnswers;
     }
 
     public static int calculateGCD(int a, int b) {
