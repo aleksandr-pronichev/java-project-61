@@ -6,7 +6,7 @@ public class Engine {
     public static final int ROUNDS = 3;
 
     public static void game(String rules, String[][] questionsAndAnswers) {
-        String userName = Cli.greeting();
+        String userName = greeting();
         System.out.println(rules);
 
         Scanner scanner = new Scanner(System.in);
@@ -26,6 +26,14 @@ public class Engine {
             }
         }
         System.out.println("Congratulations, " + userName + "!");
-        scanner.close();
+    }
+
+    public static String greeting() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        String userName = scanner.next();
+        System.out.println("Hello, " + userName + "!");
+        return userName;
     }
 }
