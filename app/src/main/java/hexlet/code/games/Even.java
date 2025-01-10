@@ -19,15 +19,15 @@ public class Even {
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int number = Utils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
             String question = Integer.toString(number);
-            String correctAnswer = isEven(number);
+            String correctAnswer = isEven(number) ? "yes" : "no";
             questionsAndAnswers[i][0] = question;
             questionsAndAnswers[i][1] = correctAnswer;
         }
         return questionsAndAnswers;
     }
 
-    public static String isEven(int number) {
-        return (number % 2 == 0) ? "yes" : "no";
+    public static boolean isEven(int number) {
+        return (number % 2 == 0);
     }
 }
 

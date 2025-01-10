@@ -23,7 +23,7 @@ public class Calc {
             int secondNumber = Utils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
             char operator = operators[(int) (Math.random() * operators.length)];
             String question = firstNumber + " " + operator + " " + secondNumber;
-            String correctAnswer = calculate(firstNumber, secondNumber, operator);
+            String correctAnswer = Integer.toString(calculate(firstNumber, secondNumber, operator));
 
             questionsAndAnswers[i][0] = question;
             questionsAndAnswers[i][1] = correctAnswer;
@@ -31,14 +31,14 @@ public class Calc {
         return questionsAndAnswers;
     }
 
-    public static String calculate(int firstNumber, int secondNumber, char operator) {
+    public static int calculate(int firstNumber, int secondNumber, char operator) {
         switch (operator) {
             case '+':
-                return Integer.toString(firstNumber + secondNumber);
+                return firstNumber + secondNumber;
             case '-':
-                return Integer.toString(firstNumber - secondNumber);
+                return firstNumber - secondNumber;
             case '*':
-                return Integer.toString(firstNumber * secondNumber);
+                return firstNumber * secondNumber;
             default:
                 throw new IllegalArgumentException("Unsupported operator");
         }

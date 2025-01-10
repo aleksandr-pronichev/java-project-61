@@ -24,34 +24,32 @@ public class Progression {
             int start = Utils.getRandomInt(0, MAX_START);
             int step = Utils.getRandomInt(1, MAX_STEP + 1);
 
-            String[] progression = generateProgression(start, step, progressionLength);
+            int[] progression = generateProgression(start, step, progressionLength);
 
-            questionsAndAnswers[i][0] = progression[0];
-            questionsAndAnswers[i][1] = progression[1];
+            String[] stringProgression = new String[progression.length];
+            for (int j = 0; j < progression.length; j++) {
+                stringProgression[j] = Integer.toString(progression[j]);
+            }
+
+            int missingIndex = Utils.getRandomInt(0, progressionLength - 1);
+            String missingNumber = stringProgression[missingIndex];
+            stringProgression[missingIndex] = "..";
+
+            String question = String.join(" ", stringProgression);
+
+            questionsAndAnswers[i][0] = question;
+            questionsAndAnswers[i][1] = missingNumber;
         }
         return questionsAndAnswers;
     }
 
-    public static String[] generateProgression(int start, int step, int length) {
+    public static int[] generateProgression(int start, int step, int length) {
         int[] progression = new int[length];
 
         for (int i = 0; i < length; i++) {
             progression[i] = start + i * step;
         }
 
-        int missingIndex = Utils.getRandomInt(0, length - 1);
-        int missingNumber = progression[missingIndex];
-
-        String[] formattedProgression = new String[length];
-
-        for (int i = 0; i < length; i++) {
-            if (i == missingIndex) {
-                formattedProgression[i] = "..";
-            } else {
-                formattedProgression[i] = Integer.toString(progression[i]);
-            }
-        }
-        String question = String.join(" ", formattedProgression);
-        return new String[]{question, Integer.toString(missingNumber)};
+        return progression;
     }
 }
