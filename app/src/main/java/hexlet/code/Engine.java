@@ -6,10 +6,13 @@ public class Engine {
     public static final int ROUNDS = 3;
 
     public static void game(String rules, String[][] questionsAndAnswers) {
-        String userName = greeting();
-        System.out.println(rules);
-
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        String userName = scanner.next();
+        System.out.println("Hello, " + userName + "!");
+        System.out.println(rules);
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
             System.out.println("Question: " + questionsAndAnswers[i][0]);
